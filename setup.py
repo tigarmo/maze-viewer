@@ -4,7 +4,9 @@ from cx_Freeze import setup, Executable
 # Dependencies are automatically detected, but it might need fine tuning.
 build_exe_options = {
     "packages": ["os"],
-    "excludes": ["numpy.linalg", "numpy.core._dotblas", "numpy.linalg.lapack_lite"]
+    "excludes": ["numpy.linalg", "numpy.core._dotblas", "numpy.linalg.lapack_lite"],
+    "compressed" : True,
+    "include_files": ["res", "maze.txt", "maze_bigger.txt", "steps.txt", "steps_bigger.txt"]
 }
 
 setup(  name = "maze-viewer",
