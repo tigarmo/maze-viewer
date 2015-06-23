@@ -2,6 +2,7 @@ Maze Viewer
 ===========
 
 A dead simple _viewer_ to help students with a class assignment.
+
 ![screenshot](res/screenshot.png)
 
 Usage
